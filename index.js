@@ -847,10 +847,10 @@ function initEventListeners() {
           <!-- Shipping details card -->
           <div style="background-color: #f7f9fa; border: 1px solid #ddd; border-radius: 6px; padding: 12px; margin-bottom: 14px; font-size: 13px; line-height: 1.45; color: #111;">
             <div style="display: flex; gap: 10px; margin-bottom: 8px;">
-              <img src="${pkg.image}" style="width: 45px; height: 45px; object-fit: contain; background: white; border: 1px solid #ddd; padding: 2px; border-radius: 4px;" alt="Product Thumbnail">
+              <img src="images/sf_map.jpg" style="width: 45px; height: 45px; object-fit: contain; background: white; border: 1px solid #ddd; padding: 2px; border-radius: 4px;" alt="Product Thumbnail">
               <div>
                 <strong style="display: block; font-size: 12px; max-height: 36px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-transform: uppercase;">
-                  ${pkg.title.toUpperCase()}
+                  AIR PODS FROM XPERIENCE MEDIA
                 </strong>
                 <span style="display: inline-flex; align-items: center; gap: 4px; margin-top: 4px;">
                   <span style="background-color: #0066c0; color: #ffffff; font-size: 8px; font-weight: 800; padding: 2px 4px; border-radius: 1px; text-transform: uppercase;">AMAZON PRIME</span>
