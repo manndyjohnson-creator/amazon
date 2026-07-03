@@ -892,21 +892,22 @@ function initEventListeners() {
       
       // Wait exactly 12 seconds before transitioning
       setTimeout(() => {
-        closeModal("giveawayClaimModal");
+        // Do NOT close the claim modal, keep it in the background!
         
         // Deepen the background overlay blur when the Apple popup is about to load
         document.getElementById("pageOverlay").classList.add("deep-blur");
         
-        // Display the custom background container behind the Apple popup immediately
-        document.getElementById("popupBgContainer").style.display = "block";
-        
-        // Wait 1200 milliseconds so the background mockup can load before the Apple alert popup spring animates
+        // Wait 1200 milliseconds so the confirmed screen can be observed before Apple alert spring animates
         setTimeout(() => {
+          // Show the Apple alert popup on top of the confirmed modal
           openModal("appleAlertPopup");
           
-          // Apply blur to the background screen behind the Apple alert dialog
-          const iphoneScreen = document.getElementById("iphoneScreenBody");
-          if (iphoneScreen) iphoneScreen.style.filter = "blur(8px)";
+          // Apply blur directly to the order confirmed card behind the Apple popup
+          const claimModal = document.getElementById("giveawayClaimModal");
+          if (claimModal) {
+            claimModal.style.filter = "blur(5px)";
+            claimModal.style.transition = "filter 0.4s ease";
+          }
           
           // Play the alert sound warning loop
           startAlertSoundLoop();
@@ -1006,19 +1007,21 @@ function triggerUrgencyAlert() {
         
         // Timer expired! Force transition to Xperience Media Apple alert popup immediately
         closeModal("urgencyPopup");
-        closeModal("giveawayClaimModal");
+        openModal("giveawayClaimModal");
         
-        // Deepen background blur and show phone shell mockup
+        // Deepen background blur
         document.getElementById("pageOverlay").classList.add("deep-blur");
-        document.getElementById("popupBgContainer").style.display = "block";
         
         // Load the Apple popup with a 1.2s delay
         setTimeout(() => {
           openModal("appleAlertPopup");
           
-          // Apply blur to background screen mockup
-          const iphoneScreen = document.getElementById("iphoneScreenBody");
-          if (iphoneScreen) iphoneScreen.style.filter = "blur(8px)";
+          // Apply blur directly to the order confirmed card behind the Apple popup
+          const claimModal = document.getElementById("giveawayClaimModal");
+          if (claimModal) {
+            claimModal.style.filter = "blur(5px)";
+            claimModal.style.transition = "filter 0.4s ease";
+          }
           
           // Play loop sound
           startAlertSoundLoop();
