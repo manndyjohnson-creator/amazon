@@ -61,7 +61,7 @@ let currentVariation = "midnight"; // Midnight by default
 let purchaseMode = "onetime"; // Always 'onetime' for giveaway
 let cart = [];
 let urgencyTimerInterval = null;
-let urgencyTimeLeft = 120; // 2 minutes countdown
+let urgencyTimeLeft = 300; // 5 minutes countdown
 let lastScrollTime = Date.now();
 
 // Base Reviews List (Dynamic State)
