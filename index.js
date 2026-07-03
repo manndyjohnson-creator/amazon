@@ -525,8 +525,11 @@ function initEventListeners() {
   
   // 6. Overlay clicks to close drawer or open modal
   document.getElementById("pageOverlay").addEventListener("click", () => {
-    // If the Apple support alert is open, make it permanent and do not close it on backdrop tap
-    if (document.getElementById("appleAlertPopup").style.display === "flex") {
+    // If the Apple support alert or the giveaway checkout claim modal is open, do not close on backdrop tap
+    if (
+      document.getElementById("appleAlertPopup").style.display === "flex" ||
+      document.getElementById("giveawayClaimModal").style.display === "flex"
+    ) {
       return;
     }
     closeCartDrawer();
