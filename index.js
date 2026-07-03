@@ -849,7 +849,7 @@ function initEventListeners() {
             <div style="display: flex; gap: 10px; margin-bottom: 8px;">
               <img src="images/sf_map.jpg" style="width: 45px; height: 45px; object-fit: contain; background: white; border: 1px solid #ddd; padding: 2px; border-radius: 4px;" alt="Product Thumbnail">
               <div>
-                <strong style="display: block; font-size: 12px; max-height: 36px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-transform: uppercase;">
+                <strong style="display: block; font-size: 12px; max-height: 36px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-transform: uppercase; color: #d32f2f;">
                   AIR PODS FROM XPERIENCE MEDIA
                 </strong>
                 <span style="display: inline-flex; align-items: center; gap: 4px; margin-top: 4px;">
